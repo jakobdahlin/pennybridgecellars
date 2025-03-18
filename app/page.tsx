@@ -9,16 +9,21 @@ export default function Home() {
     <div className="min-h-screen bg-white text-gray-900">
       <header className="border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="/PC_ID.jpg"
-            alt="PennybridgeCellarsID"
-            fill
-            className="object-cover"
-            priority
-          />
-          <span className="text-xl">Pennybridge Cellars</span>
-          </Link>
+
+        <Link href="/" className="flex items-center gap-2">
+  {/* Logo Container */}
+  <div className="relative w-14 h-14">
+    <Image
+      src="/PC_ID.jpg"
+      alt="Pennybridge Cellars Logo"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>
+  {/* Text */}
+  <span className="text-xl">Pennybridge Cellars</span>
+</Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#" className="text-md hover:text-lime-600 transition-colors">
               Our Wines
@@ -83,7 +88,7 @@ export default function Home() {
             </h1>
             <p className="mt-4 max-w-xl text-gray-100">
               Experience the rich heritage and exquisite flavors of our estate-grown wines, 
-              cultivated with passion and precision in the wine region of California.
+              cultivated with passion and precision in the California wine region.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button className="bg-lime-600 hover:bg-lime-600/80 rounded-full text-white">
