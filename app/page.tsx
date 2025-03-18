@@ -10,7 +10,13 @@ export default function Home() {
       <header className="border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-          <img src="/PC_ID.jpg" className="w-[70px]"/>
+          <Image
+            src="/PC_ID.jpg"
+            alt="PennybridgeCellarsID"
+            fill
+            className="object-cover"
+            priority
+          />
           <span className="text-xl">Pennybridge Cellars</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
@@ -76,11 +82,13 @@ export default function Home() {
               Crafting Exceptional Wines in the Heart of Napa Valley
             </h1>
             <p className="mt-4 max-w-xl text-gray-100">
-              Experience the rich heritage and exquisite flavors of our estate-grown wines, cultivated with passion and
-              precision in California's premier wine region.
+              Experience the rich heritage and exquisite flavors of our estate-grown wines, 
+              cultivated with passion and precision in the wine region of California.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button className="bg-lime-600 hover:bg-lime-600/80 rounded-full text-white">Explore Our Collection</Button>
+              <Button className="bg-lime-600 hover:bg-lime-600/80 rounded-full text-white">
+              Explore Our Collection
+              </Button>
               <Button variant="outline" className="border-white text-black rounded-full
               hover:bg-white/80">
                 Book a Tasting
